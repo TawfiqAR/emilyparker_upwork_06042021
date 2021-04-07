@@ -21,28 +21,36 @@ export const employee = {
 export const jobs = [
   {
     id: 1,
-    description: "I want a mobile app",
+    title: "I want a mobile app",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi turpis mi, fringilla nec ligula a, tristique placerat eros. Nam facilisis varius laoreet. Maecenas pharetra arcu a nisl efficitur mollis. Mauris erat nunc, placerat nec faucibus vel, aliquet in diam. Donec volutpat rhoncus neque, quis congue tellus vulputate et. Sed pretium.",
     employeeInterested: [],
     url: "./asset/test1.jpg",
     employerId: 1,
   },
   {
     id: 2,
-    description: "I want a web app",
+    title: "I want a web app",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi turpis mi, fringilla nec ligula a, tristique placerat eros. Nam facilisis varius laoreet. Maecenas pharetra arcu a nisl efficitur mollis. Mauris erat nunc, placerat nec faucibus vel, aliquet in diam. Donec volutpat rhoncus neque, quis congue tellus vulputate et. Sed pretium.",
     employeeInterested: [],
     url: "./asset/test1.jpg",
     employerId: 1,
   },
   {
     id: 3,
-    description: "I want a QA",
+    title: "I want a QA",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi turpis mi, fringilla nec ligula a, tristique placerat eros. Nam facilisis varius laoreet. Maecenas pharetra arcu a nisl efficitur mollis. Mauris erat nunc, placerat nec faucibus vel, aliquet in diam. Donec volutpat rhoncus neque, quis congue tellus vulputate et. Sed pretium.",
     employeeInterested: [],
     url: "./asset/test1.jpg",
     employerId: 2,
   },
   {
     id: 4,
-    description: "I want a web/mobile app",
+    title: "I want a web/mobile app",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi turpis mi, fringilla nec ligula a, tristique placerat eros. Nam facilisis varius laoreet. Maecenas pharetra arcu a nisl efficitur mollis. Mauris erat nunc, placerat nec faucibus vel, aliquet in diam. Donec volutpat rhoncus neque, quis congue tellus vulputate et. Sed pretium.",
     employeeInterested: [],
     url: "./asset/test1.jpg",
     employerId: 2,

@@ -5,6 +5,8 @@ import EmployeeProfile from "./components/EmployeeProfile";
 import "antd/dist/antd.css";
 import React, { useState } from "react";
 import { Modal, Button } from "antd";
+import Login from "./components/Login";
+import Routes from "./components/Routes";
 
 function App() {
   const [isModalVisible, setIsModalVisible] = useState(false);
@@ -23,19 +25,7 @@ function App() {
 
   return (
     <>
-      <Button type="primary" onClick={showModal}>
-        Show User Profile
-      </Button>
-      <Modal
-        title="Employee Profile"
-        visible={isModalVisible}
-        onOk={handleOk}
-        onCancel={handleCancel}
-      >
-        <EmployeeProfile />
-      </Modal>
-
-      <JobCard />
+      <Routes />
     </>
   );
 }

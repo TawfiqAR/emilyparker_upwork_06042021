@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import { employee, jobs, employers } from "../data/Data";
+import React from "react";
+import { employee } from "../data/Data";
 import { List, Card, Input, Typography, Divider } from "antd";
-import { InfoCircleOutlined, UserOutlined } from "@ant-design/icons";
+import { UserOutlined } from "@ant-design/icons";
 
 function EmployeeProfile() {
   return (
@@ -26,7 +26,7 @@ function EmployeeProfile() {
         dataSource={employee.jobsLiked}
         renderItem={(item) => (
           <List.Item>
-            <Typography.Text mark></Typography.Text> {item.description}
+            <Typography.Text mark></Typography.Text> {item.title}
           </List.Item>
         )}
       />
