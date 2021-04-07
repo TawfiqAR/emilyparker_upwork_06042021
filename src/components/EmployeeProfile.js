@@ -1,17 +1,17 @@
 import React, { useState } from "react";
-import { Employer, Job, Employee } from "../data/EmployerData";
+import { employee, jobs, employers } from "../data/Data";
 import { List, Card, Input, Typography, Divider } from "antd";
 import { InfoCircleOutlined, UserOutlined } from "@ant-design/icons";
 
 function EmployeeProfile() {
   return (
-    <Card title={Employee.name}>
-      <Input prefix={<UserOutlined />} disabled value={Employee.name} />
+    <Card title={employee.name}>
+      <Input prefix={<UserOutlined />} disabled value={employee.name} />
       <p />
       <Divider orientation="left">Skills</Divider>
       <List
         bordered
-        dataSource={Employee.skills}
+        dataSource={employee.skills}
         renderItem={(item) => (
           <List.Item>
             <Typography.Text mark></Typography.Text> {item}
@@ -22,11 +22,11 @@ function EmployeeProfile() {
       <p />
       <Divider orientation="left">Jobs Liked</Divider>
       <List
-        grid={{ gutter: 16, column: 4 }}
-        dataSource={Employee.jobsLiked}
+        bordered
+        dataSource={employee.jobsLiked}
         renderItem={(item) => (
           <List.Item>
-            <Card title={item.employerId}>{item.description}</Card>
+            <Typography.Text mark></Typography.Text> {item.description}
           </List.Item>
         )}
       />

@@ -1,16 +1,16 @@
 import React, { useState } from "react";
 // import TinderCard from '../react-tinder-card/index'
 import TinderCard from "react-tinder-card";
-import { Employer, Job, Employee } from "../data/EmployerData";
+import { employers, jobs, employee } from "../data/Data";
 
-function Simple() {
+function JobCard() {
   const [lastDirection, setLastDirection] = useState();
 
   const swiped = (direction, job) => {
     setLastDirection(direction);
-    Employee.jobsLiked.push(job);
-    job.employeeInterested.push(Employee);
-    console.log(Job);
+    employee.jobsLiked.push(job);
+    job.employeeInterested.push(employee);
+    console.log(jobs);
   };
 
   return (
@@ -25,7 +25,7 @@ function Simple() {
       />
       <h1>Find A Job</h1>
       <div className="cardContainer">
-        {Job.map((job) => (
+        {jobs.map((job) => (
           <TinderCard
             className="swipe"
             key={job.id}
@@ -46,4 +46,4 @@ function Simple() {
   );
 }
 
-export default Simple;
+export default JobCard;

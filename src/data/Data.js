@@ -1,4 +1,4 @@
-export const Employer = [
+export const employers = [
   {
     id: 1,
     name: "Employer1",
@@ -11,14 +11,14 @@ export const Employer = [
   },
 ];
 
-export const Employee = {
+export const employee = {
   id: 1,
   name: "Tester tester",
   jobsLiked: [],
   skills: ["web", "mobile", "QA"],
 };
 
-export const Job = [
+export const jobs = [
   {
     id: 1,
     description: "I want a mobile app",
